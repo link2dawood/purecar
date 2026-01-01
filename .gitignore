@@ -3,15 +3,19 @@
 # -------------------------
 /vendor/
 bootstrap/cache/
-storage/*.key
-storage/app/*
-storage/app/public/*
-storage/framework/*
-storage/logs/*
 
+/storage/*
+!storage/.gitignore
+!storage/app/.gitignore
 !storage/app/public/.gitignore
 !storage/framework/.gitignore
 !storage/logs/.gitignore
+
+# -------------------------
+# Custom Project Directories
+# -------------------------
+/dev/
+/h/
 
 # -------------------------
 # Environment & Secrets
@@ -23,7 +27,7 @@ storage/logs/*
 # -------------------------
 # Node / Frontend
 # -------------------------
-node_modules/
+/node_modules/
 npm-debug.log*
 yarn-error.log*
 pnpm-debug.log*
@@ -61,7 +65,7 @@ desktop.ini
 # Testing / Coverage
 # -------------------------
 .phpunit.result.cache
-coverage/
+/coverage/
 .php-cs-fixer.cache
 
 # -------------------------
