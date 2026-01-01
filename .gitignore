@@ -1,0 +1,87 @@
+# -------------------------
+# Laravel / PHP
+# -------------------------
+/vendor/
+bootstrap/cache/
+storage/*.key
+storage/app/*
+storage/app/public/*
+storage/framework/*
+storage/logs/*
+
+!storage/app/public/.gitignore
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+
+# -------------------------
+# Environment & Secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------
+# Node / Frontend
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -------------------------
+# Build Artifacts
+# -------------------------
+public/hot
+public/storage
+public/build
+mix-manifest.json
+
+# -------------------------
+# IDE / Editor
+# -------------------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------
+# OS Files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# Logs & Cache
+# -------------------------
+*.log
+*.cache
+
+# -------------------------
+# Testing / Coverage
+# -------------------------
+.phpunit.result.cache
+coverage/
+.php-cs-fixer.cache
+
+# -------------------------
+# Archives (ZIP & others)
+# -------------------------
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# -------------------------
+# Temporary / Backup Files
+# -------------------------
+*.swp
+*.bak
+*.tmp
+*.old
+
+# -------------------------
+# Docker / CI Overrides
+# -------------------------
+docker-compose.override.yml
